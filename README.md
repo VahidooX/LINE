@@ -17,6 +17,7 @@ gpu_available = tf.test.is_gpu_available()
 
 Notes: 
 To use GPU inside docker, we need nvidia-container-toolkit (for latest versions of docker) # https://www.tensorflow.org/api_docs/python/tf/test/is_gpu_available
+
 Docker instructions tensorflow: https://www.tensorflow.org/install/docker
 
 If you need running instructions for the original version of the code (written in cpp), please get in touch with me by raising an issue.
