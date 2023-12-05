@@ -46,7 +46,7 @@ def load_data(label_file, edge_file):
 
 def LINE_loss(y_true, y_pred):
     coeff = y_true*2 - 1
-    return -K.mean(K.log(K.sigmoid(coeff*y_pred)))
+    return -K.mean(K.log(K.sigmoid(float(coeff)*float(y_pred))))
 
 
 def batchgen_train(adj_list, numNodes, batch_size, negativeRatio, negative_sampling):

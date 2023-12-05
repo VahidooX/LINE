@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     model.compile(optimizer='rmsprop', loss={'left_right_dot': LINE_loss})
 
-    model.fit_generator(data_gen, samples_per_epoch=epoch_train_size, nb_epoch=epoch_num, verbose=1)
+    model.fit_generator(data_gen, steps_per_epoch=epoch_train_size, epochs=epoch_num, verbose=1)
 
     new_X = []
     new_label = []
